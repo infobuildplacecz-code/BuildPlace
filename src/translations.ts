@@ -1,0 +1,628 @@
+import { Language, TranslationSchema } from './types';
+
+export const translations: Record<Language, TranslationSchema> = {
+  ru: {
+    nav: {
+      whyUs: 'Почему мы',
+      howItWorks: 'Как это работает',
+      benefits: 'Преимущества',
+      orders: 'Примеры заказов',
+      contacts: 'Контакты',
+      telegramButton: 'Канал @buildplacecz',
+    },
+    hero: {
+      tagline: 'Официальный строительный Telegram-канал Чехии',
+      titlePart1: 'СТРОИТЕЛЬНЫЕ ЗАКАЗЫ',
+      titleAccent: 'В ЧЕХИИ',
+      subtitle: 'Актуальные заказы для бригад, мастеров и строительных компаний без посредников и лишней информации.',
+      ctaTelegram: 'ПЕРЕЙТИ В TELEGRAM',
+      badgeVerified: 'Канал @buildplacecz • Проверенные заказы по всей Чехии',
+      statCities: 'Прага, Брно, Пльзень, Острава',
+      statDaily: 'Ежедневные обновления',
+      statNoSpam: 'Прямые контакты без посредников',
+    },
+    whyBuildplace: {
+      title: 'ПОЧЕМУ BUILDPLACE.CZ?',
+      subtitle: 'Прямой доступ к строительному рынку Чехии без комиссий и пустых звонков',
+      cards: [
+        {
+          title: 'ТОЛЬКО РЕАЛЬНЫЕ ЗАКАЗЫ',
+          description: 'Проверяем каждый заказ вручную перед публикацией в канале, отсеивая спам и неактуальные заявки.',
+        },
+        {
+          title: 'ПО ВСЕЙ ЧЕХИИ',
+          description: 'Прага, Брно, Пльзень, Острава, Либерец и любые другие регионы Чешской Республики.',
+        },
+        {
+          title: 'ПРЯМОЙ КОНТАКТ С ЗАКАЗЧИКОМ',
+          description: 'Контакты указаны прямо в публикациях канала — без посреднических процентов и долгих согласований.',
+        },
+        {
+          title: 'БЕЗ РЕКЛАМЫ И СПАМА',
+          description: 'В канале @buildplacecz публикуются исключительно строительные объекты, тендеры и подрядные работы.',
+        },
+        {
+          title: 'НОВЫЕ ЗАКАЗЫ КАЖДЫЙ ДЕНЬ',
+          description: 'Будьте в курсе первыми: получайте мгновенные уведомления в Telegram при появлении новых объектов.',
+        },
+      ],
+    },
+    howItWorks: {
+      title: 'КАК ЭТО РАБОТАЕТ?',
+      subtitle: 'Всего 4 простых шага от подписки до выхода на объект',
+      steps: [
+        {
+          number: '1',
+          title: 'ПОДПИШИСЬ НА КАНАЛ',
+          description: 'Перейди в официальный Telegram-канал @buildplacecz и получай проверенные заказы прямо в ленту.',
+        },
+        {
+          number: '2',
+          title: 'НАЙДИ ПОДХОДЯЩИЙ ЗАКАЗ',
+          description: 'Каждый день публикуются новые объекты по Чехии с четкими объемами, адресами и расценками в кронах.',
+        },
+        {
+          number: '3',
+          title: 'НАПИШИ В КОММЕНТАРИИ',
+          description: 'Если заказ интересен — оставь комментарий под публикацией в канале или свяжись с ботом/заказчиком.',
+        },
+        {
+          number: '4',
+          title: 'ПОЛУЧИ КОНТАКТ ЗАКАЗЧИКА',
+          description: 'После отклика связываешься напрямую, договариваешься об условиях и приступаешь к работе на объекте.',
+        },
+      ],
+    },
+    whyUsDetailed: {
+      title: 'ПОЧЕМУ ИМЕННО НАША КОМПАНИЯ',
+      subtitle: 'Надежный мост между заказчиками и исполнителями на строительном рынке Чехии',
+      reasons: [
+        {
+          title: 'Экономия времени и денег',
+          description: 'Больше не нужно тратить часы на поиск работы по доскам объявлений или платить сомнительным посредникам до 30% от сметы.',
+          highlight: '0% комиссии',
+        },
+        {
+          title: 'Широкий спектр строительных направлений',
+          description: 'От отделки квартир, малярных работ, электрики и сантехники до монолитного строительства, кладки, кровель и фасадов.',
+          highlight: 'Все виды работ',
+        },
+        {
+          title: 'Глубокое знание чешского рынка',
+          description: 'Мы понимаем местную строительную специфику, стандарты ČSN, требования генеральных подрядчиков и частных инвесторов.',
+          highlight: 'Опыт в Чехии',
+        },
+        {
+          title: 'Моментальный отклик через Telegram',
+          description: 'Telegram — самый быстрый инструмент коммуникации. Телефон и контакты заказчика у вас в руках за считанные минуты.',
+          highlight: 'Мгновенно',
+        },
+      ],
+    },
+    liveOrders: {
+      title: 'ПРИМЕРЫ СВЕЖИХ ЗАКАЗОВ В КАНАЛЕ',
+      subtitle: 'Каждый день в канале @buildplacecz публикуются десятки новых предложений',
+      liveBadge: 'Лента @buildplacecz',
+      viewInTelegram: 'Все заказы в @buildplacecz',
+      orders: [
+        {
+          title: 'Укладка керамогранита и плитки в жилом комплексе',
+          city: 'Прага 5 (Смихов)',
+          category: 'Отделка / Плитка',
+          budget: 'от 750 Kč / м²',
+          date: 'Сегодня, 10:15',
+        },
+        {
+          title: 'Бригада монолитчиков для строительства паркинга',
+          city: 'Брно (Куржим)',
+          category: 'Монолит / Бетон',
+          budget: 'договорная, смета',
+          date: 'Сегодня, 08:40',
+        },
+        {
+          title: 'Комплексный ремонт 3-комнатной квартиры под ключ',
+          city: 'Пльзень',
+          category: 'Ремонт под ключ',
+          budget: '280 000 – 340 000 Kč',
+          date: 'Вчера',
+        },
+        {
+          title: 'Утепление и штукатурка фасада частного дома',
+          city: 'Прага-Восток (Ржичаны)',
+          category: 'Фасадные работы',
+          budget: '190 000 Kč',
+          date: 'Вчера',
+        },
+      ],
+    },
+    ctaBanner: {
+      motto1: 'СТРОЙ.',
+      motto2: ' РАБОТАЙ.',
+      motto3: ' ЗАРАБАТЫВАЙ.',
+      text: 'Подписывайся на официальный канал @buildplacecz и получай актуальные строительные заказы по всей Чехии каждый день.',
+      ctaButton: 'ПЕРЕЙТИ В КАНАЛ @buildplacecz',
+    },
+    footer: {
+      tagline: 'Строительные заказы по всей Чехии',
+      description: 'Централизованная платформа для строителей, бригад, частных мастеров и генподрядчиков в Чешской Республике.',
+      contactsTitle: 'Контакты',
+      socialTitle: 'Социальные сети',
+      telegramHighlight: 'Официальный рабочий Telegram-канал со строительными заказами',
+      telegramCta: 'Перейти в канал @buildplacecz',
+      telegramHandle: '@buildplacecz',
+      email: 'info@buildplace.cz',
+      instagram: 'buildplacecz',
+      facebook: 'Buildplace.cz Facebook',
+      rights: '© 2026 BUILDPLACE.CZ. Все права защищены.',
+      czechMarketBadge: 'Чешский строительный рынок',
+    },
+  },
+  cs: {
+    nav: {
+      whyUs: 'Proč my',
+      howItWorks: 'Jak to funguje',
+      benefits: 'Výhody',
+      orders: 'Ukázky zakázek',
+      contacts: 'Kontakty',
+      telegramButton: 'Přejít do Telegramu',
+    },
+    hero: {
+      tagline: 'Platforma ověřených stavebních zakázek',
+      titlePart1: 'STAVEBNÍ ZAKÁZKY',
+      titleAccent: 'V ČESKU',
+      subtitle: 'Aktuální zakázky pro party, řemeslníky a stavební firmy bez zprostředkovatelů a zbytečných informací.',
+      ctaTelegram: 'PŘEJÍT DO TELEGRAMU',
+      badgeVerified: 'Pouze ověřené zakázky po celém Česku',
+      statCities: 'Praha, Brno, Plzeň, Ostrava',
+      statDaily: 'Denní aktualizace',
+      statNoSpam: 'Přímé kontakty bez provizí',
+    },
+    whyBuildplace: {
+      title: 'PROČ BUILDPLACE.CZ?',
+      subtitle: 'Přímý přístup na český stavební trh bez provizí a zbytečného hledání',
+      cards: [
+        {
+          title: 'POUZE REÁLNÉ ZAKÁZKY',
+          description: 'Každou zakázku prověřujeme ručně před zveřejněním, abychom zamezili spamu a neaktuálním nabídkám.',
+        },
+        {
+          title: 'PO CELÉM ČESKU',
+          description: 'Praha, Brno, Plzeň, Ostrava, Liberec a všechny ostatní regiony České republiky.',
+        },
+        {
+          title: 'PŘÍMÝ KONTAKT SE ZADAVATELEM',
+          description: 'Bez skrytých poplatků, provizních zprostředkovatelů a zdlouhavých schvalovacích řetězců.',
+        },
+        {
+          title: 'BEZ REKLAM A SPAMU',
+          description: 'V kanálu jsou publikovány výhradně reálné stavební projekty, poptávky a subdodávky.',
+        },
+        {
+          title: 'NOVÉ ZAKÁZKY KAŽDÝ DEN',
+          description: 'Buďte informováni jako první: dostávejte upozornění okamžitě po zveřejnění nových staveb.',
+        },
+      ],
+    },
+    howItWorks: {
+      title: 'JAK TO FUNGUJE?',
+      subtitle: 'Jen 4 jednoduché kroky od odběru k zahájení zakázky',
+      steps: [
+        {
+          number: '1',
+          title: 'ODEBÍREJTE KANÁL',
+          description: 'Přejděte do Telegramu a získejte nové ověřené zakázky přímo do svého mobilu.',
+        },
+        {
+          number: '2',
+          title: 'NAJDĚTE VHODNOU ZAKÁZKU',
+          description: 'Každý den publikujeme nové objekty v ČR s přesným popisem rozsahů a termínů.',
+        },
+        {
+          number: '3',
+          title: 'NAPIŠTE DO KOMENTÁŘŮ',
+          description: 'Pokud vás zakázka zaujala, zanechte komentář pod příspěvkem nebo kontaktujte bota.',
+        },
+        {
+          number: '4',
+          title: 'ZÍSKEJTE KONTAKT NA ZADAVATELE',
+          description: 'Po reakci komunikujete se zadavatelem přímo, dohodnete podmínky a začnete pracovat.',
+        },
+      ],
+    },
+    whyUsDetailed: {
+      title: 'PROČ PRÁVĚ NAŠE SPOLEČNOST',
+      subtitle: 'Spolehlivý most mezi investory a staviteli na českém trhu',
+      reasons: [
+        {
+          title: 'Úspora času a nákladů',
+          description: 'Už žádné hodiny strávené na inzertních webech a žádné placení vysokých provizí neprůhledným agenturám.',
+          highlight: '0% provize',
+        },
+        {
+          title: 'Kompletní spektrum stavebních profesí',
+          description: 'Od rekonstrukcí bytů, obkladů, elektroinstalace a instalatérství po monolitické konstrukce, střechy a fasády.',
+          highlight: 'Všechny obory',
+        },
+        {
+          title: 'Znalost českého stavebního prostředí',
+          description: 'Známe požadavky norem, místních stavebníků, developerů i soukromých investorů v České republice.',
+          highlight: 'Zkušenosti v ČR',
+        },
+        {
+          title: 'Blesková komunikace přes Telegram',
+          description: 'Telegram je nejefektivnější způsob rychlého předání kontaktu. Získejte číslo zadavatele za pár minut.',
+          highlight: 'Okamžitě',
+        },
+      ],
+    },
+    liveOrders: {
+      title: 'UKÁZKY AKTUÁLNÍCH ZAKÁZEK V KANÁLU',
+      subtitle: 'Každý den v kanálu přibývají nové poptávky',
+      liveBadge: 'Reálné objekty',
+      viewInTelegram: 'Zobrazit v Telegramu',
+      orders: [
+        {
+          title: 'Pokládka velkoformátové dlažby v bytovém komplexu',
+          city: 'Praha 5 (Smíchov)',
+          category: 'Obklady / Dlažby',
+          budget: 'od 750 Kč / m²',
+          date: 'Dnes, 10:15',
+        },
+        {
+          title: 'Parta monolitářů na výstavbu podzemních garáží',
+          city: 'Brno (Kuřim)',
+          category: 'Monolity / Beton',
+          budget: 'dohodou, položkově',
+          date: 'Dnes, 08:40',
+        },
+        {
+          title: 'Kompletní rekonstrukce bytu 3+kk na klíč',
+          city: 'Plzeň',
+          category: 'Rekonstrukce na klíč',
+          budget: '280 000 – 340 000 Kč',
+          date: 'Včera',
+        },
+        {
+          title: 'Zateplení a finální omítka fasády rodinného domu',
+          city: 'Praha-východ (Říčany)',
+          category: 'Fasádnické práce',
+          budget: '190 000 Kč',
+          date: 'Včera',
+        },
+      ],
+    },
+    ctaBanner: {
+      motto1: 'STAVĚJ.',
+      motto2: ' PRACUJ.',
+      motto3: ' VYDĚLÁVEJ.',
+      text: 'Odebírejte náš kanál a získejte aktuální stavební zakázky po celém Česku každý den.',
+      ctaButton: 'PŘEJÍT DO TELEGRAMU',
+    },
+    footer: {
+      tagline: 'Stavební zakázky po celém Česku',
+      description: 'Specializovaná platforma pro řemeslníky, stavební party a generální dodavatele v ČR.',
+      contactsTitle: 'Kontakty',
+      socialTitle: 'Sociální sítě',
+      telegramHighlight: 'Hlavní pracovní kanál se zakázkami',
+      telegramCta: 'Otevřít Telegram kanál',
+      telegramHandle: '@buildplacecz',
+      email: 'info@buildplace.cz',
+      instagram: 'buildplacecz',
+      facebook: 'Buildplace.cz Facebook',
+      rights: '© 2026 BUILDPLACE.CZ. Všechna práva vyhrazena.',
+      czechMarketBadge: 'Český stavební trh',
+    },
+  },
+  uk: {
+    nav: {
+      whyUs: 'Чому ми',
+      howItWorks: 'Як це працює',
+      benefits: 'Переваги',
+      orders: 'Приклади замовлень',
+      contacts: 'Контакти',
+      telegramButton: 'Перейти в Telegram',
+    },
+    hero: {
+      tagline: 'Платформа перевірених будівельних об’єктів',
+      titlePart1: 'БУДІВЕЛЬНІ ЗАМОВЛЕННЯ',
+      titleAccent: 'В ЧЕХІЇ',
+      subtitle: 'Актуальні замовлення для бригад, майстрів та будівельних компаній без посередників і зайвої інформації.',
+      ctaTelegram: 'ПЕРЕЙТИ В TELEGRAM',
+      badgeVerified: 'Лише перевірені замовлення по всій Чехії',
+      statCities: 'Прага, Брно, Пльзень, Острава',
+      statDaily: 'Щоденні оновлення',
+      statNoSpam: 'Прямі контакти без посередників',
+    },
+    whyBuildplace: {
+      title: 'ЧОМУ BUILDPLACE.CZ?',
+      subtitle: 'Прямий доступ до будівельного ринку Чехії без комісій та пустих дзвінків',
+      cards: [
+        {
+          title: 'ТІЛЬКИ РЕАЛЬНІ ЗАМОВЛЕННЯ',
+          description: 'Перевіряємо кожне замовлення вручну перед публікацією, відсіваючи спам та неактуальні заявки.',
+        },
+        {
+          title: 'ПО ВСІЙ ЧЕХІЇ',
+          description: 'Прага, Брно, Пльзень, Острава, Ліберець та всі інші регіони Чеської Республіки.',
+        },
+        {
+          title: 'ПРЯМИЙ КОНТАКТ ІЗ ЗАМОВНИКОМ',
+          description: 'Без прихованих переплат, посередницьких відсотків та довгих ланцюжків узгодження.',
+        },
+        {
+          title: 'БЕЗ РЕКЛАМИ ТА СПАМУ',
+          description: 'У каналі публікуються виключно будівельні об’єкти, тендери та підрядні роботи.',
+        },
+        {
+          title: 'НОВІ ЗАМОВЛЕННЯ ЩОДНЯ',
+          description: 'Будьте в курсі першими: отримуйте сповіщення відразу після появи нових об’єктів.',
+        },
+      ],
+    },
+    howItWorks: {
+      title: 'ЯК ЦЕ ПРАЦЮЄ?',
+      subtitle: 'Усього 4 прості кроки від підписки до виходу на об’єкт',
+      steps: [
+        {
+          number: '1',
+          title: 'ПІДПИШИСЬ НА КАНАЛ',
+          description: 'Перейди в Telegram та отримуй нові перевірені замовлення прямо в стрічку смартфона.',
+        },
+        {
+          number: '2',
+          title: 'ЗНАЙДИ ВІДПОВІДНЕ ЗАМОВЛЕННЯ',
+          description: 'Щодня публікуються нові об’єкти по Чехії з чіткими обсягами та термінами.',
+        },
+        {
+          number: '3',
+          title: 'НАПИШИ В КОМЕНТАРІ',
+          description: 'Якщо замовлення цікаве — залиш коментар під публікацією або зв’яжися з ботом.',
+        },
+        {
+          number: '4',
+          title: 'ОТРИМАЙ КОНТАКТ ЗАМОВНИКА',
+          description: 'Після відгуку зв’язуєшся напряму, домовляєшся про умови та стаєш до роботи.',
+        },
+      ],
+    },
+    whyUsDetailed: {
+      title: 'ЧОМУ САМЕ НАША КОМПАНІЯ',
+      subtitle: 'Надійний міст між замовниками та будівельниками на ринку Чехії',
+      reasons: [
+        {
+          title: 'Економія часу та грошей',
+          description: 'Більше не потрібно годинами моніторити випадкові оголошення чи віддавати третину заробітку сумнівним посередникам.',
+          highlight: '0% комісії',
+        },
+        {
+          title: 'Широкий спектр будівельних робіт',
+          description: 'Від оздоблення квартир, плитки, сантехніки та електрики до монолітного будівництва, покрівель і фасадів.',
+          highlight: 'Усі напрямки',
+        },
+        {
+          title: 'Розуміння чеського ринку',
+          description: 'Ми знаємо місцеву будівельну специфіку, стандарти та особливості роботи з генпідрядниками й замовниками.',
+          highlight: 'Досвід у Чехії',
+        },
+        {
+          title: 'Миттєвий зв’язок через Telegram',
+          description: 'Telegram — найшвидший інструмент для отримання прямого контакту замовника за лічені хвилини.',
+          highlight: 'Миттєво',
+        },
+      ],
+    },
+    liveOrders: {
+      title: 'ПРИКЛАДИ СВІЖИХ ЗАМОВЛЕНЬ У КАНАЛІ',
+      subtitle: 'Щодня в каналі з’являються десятки нових пропозицій',
+      liveBadge: 'Реальні об’єкти',
+      viewInTelegram: 'Подивитися в Telegram',
+      orders: [
+        {
+          title: 'Укладання керамограніту та плитки в житловому комплексі',
+          city: 'Прага 5 (Сміхов)',
+          category: 'Оздоблення / Плитка',
+          budget: 'від 750 Kč / м²',
+          date: 'Сьогодні, 10:15',
+        },
+        {
+          title: 'Бригада монолітників для будівництва паркінгу',
+          city: 'Брно (Куржим)',
+          category: 'Моноліт / Бетон',
+          budget: 'договірна, кошторис',
+          date: 'Сьогодні, 08:40',
+        },
+        {
+          title: 'Комплексний ремонт 3-кімнатної квартири під ключ',
+          city: 'Пльзень',
+          category: 'Ремонт під ключ',
+          budget: '280 000 – 340 000 Kč',
+          date: 'Вчора',
+        },
+        {
+          title: 'Утеплення та штукатурка фасаду приватного будинку',
+          city: 'Прага-Схід (Ржичани)',
+          category: 'Фасадні роботи',
+          budget: '190 000 Kč',
+          date: 'Вчора',
+        },
+      ],
+    },
+    ctaBanner: {
+      motto1: 'БУДУЙ.',
+      motto2: ' ПРАЦЮЙ.',
+      motto3: ' ЗАРОБЛЯЙ.',
+      text: 'Підписуйся на канал та отримуй актуальні будівельні замовлення по всій Чехії щодня.',
+      ctaButton: 'ПЕРЕЙТИ В TELEGRAM',
+    },
+    footer: {
+      tagline: 'Будівельні замовлення по всій Чехії',
+      description: 'Централізована платформа для будівельників, бригад, майстрів та генеральних підрядників у Чехії.',
+      contactsTitle: 'Контакти',
+      socialTitle: 'Соціальні мережі',
+      telegramHighlight: 'Основний робочий канал із замовленнями',
+      telegramCta: 'Відкрити Telegram-канал',
+      telegramHandle: '@buildplacecz',
+      email: 'info@buildplace.cz',
+      instagram: 'buildplacecz',
+      facebook: 'Buildplace.cz Facebook',
+      rights: '© 2026 BUILDPLACE.CZ. Всі права захищені.',
+      czechMarketBadge: 'Чеський будівельний ринок',
+    },
+  },
+  en: {
+    nav: {
+      whyUs: 'Why Us',
+      howItWorks: 'How It Works',
+      benefits: 'Benefits',
+      orders: 'Order Feed',
+      contacts: 'Contacts',
+      telegramButton: 'Go to Telegram',
+    },
+    hero: {
+      tagline: 'Platform of Verified Construction Projects',
+      titlePart1: 'CONSTRUCTION ORDERS',
+      titleAccent: 'IN CZECHIA',
+      subtitle: 'Verified jobs for crews, craftsmen, and construction companies across the Czech Republic without intermediaries.',
+      ctaTelegram: 'GO TO TELEGRAM',
+      badgeVerified: 'Only verified construction orders across the Czech Republic',
+      statCities: 'Prague, Brno, Pilsen, Ostrava',
+      statDaily: 'Updated daily',
+      statNoSpam: 'Direct contacts with zero commission',
+    },
+    whyBuildplace: {
+      title: 'WHY BUILDPLACE.CZ?',
+      subtitle: 'Direct access to the Czech construction market without middlemen or wasted calls',
+      cards: [
+        {
+          title: 'VERIFIED REAL ORDERS ONLY',
+          description: 'Every single listing is hand-verified before publishing to filter out spam and expired ads.',
+        },
+        {
+          title: 'ACROSS THE ENTIRE CZECH REPUBLIC',
+          description: 'Prague, Brno, Pilsen, Ostrava, Liberec, and all other regions of the country.',
+        },
+        {
+          title: 'DIRECT CLIENT CONTACT',
+          description: 'Zero hidden commissions, no intermediary cuts, and fast direct communication with developers.',
+        },
+        {
+          title: 'NO ADVERTISING OR SPAM',
+          description: 'Our feed contains strictly construction projects, subcontracting bids, and specialized trade jobs.',
+        },
+        {
+          title: 'NEW ORDERS EVERY DAY',
+          description: 'Be the first to know: get real-time smartphone alerts whenever new construction sites are posted.',
+        },
+      ],
+    },
+    howItWorks: {
+      title: 'HOW IT WORKS?',
+      subtitle: 'Just 4 easy steps from joining to working on site',
+      steps: [
+        {
+          number: '1',
+          title: 'SUBSCRIBE TO THE CHANNEL',
+          description: 'Open Telegram and get verified construction opportunities directly in your daily feed.',
+        },
+        {
+          number: '2',
+          title: 'FIND A MATCHING JOB',
+          description: 'New projects with detailed scopes, budgets, and schedules are posted daily across Czechia.',
+        },
+        {
+          number: '3',
+          title: 'COMMENT OR APPLY',
+          description: 'If you are interested in a job, leave a comment under the post or reach out to the bot.',
+        },
+        {
+          number: '4',
+          title: 'GET DIRECT CLIENT CONTACT',
+          description: 'Connect directly with the project owner or general contractor to agree on terms and get to work.',
+        },
+      ],
+    },
+    whyUsDetailed: {
+      title: 'WHY CHOOSE OUR COMPANY',
+      subtitle: 'A trusted bridge connecting contractors and project owners across Czechia',
+      reasons: [
+        {
+          title: 'Save time and money',
+          description: 'Stop wasting hours sifting through unverified classified boards or giving up 20-30% to dubious intermediaries.',
+          highlight: '0% commission',
+        },
+        {
+          title: 'All construction trades supported',
+          description: 'From interior renovations, tiling, plumbing, and electrical to reinforced concrete, roofing, and general contracting.',
+          highlight: 'Full coverage',
+        },
+        {
+          title: 'Deep Czech market expertise',
+          description: 'We understand local building regulations, contractor standards, and project expectations throughout the country.',
+          highlight: 'Local expertise',
+        },
+        {
+          title: 'Instant Telegram notifications',
+          description: 'Telegram is the fastest communication channel. Secure direct contact details in a matter of minutes.',
+          highlight: 'Instant',
+        },
+      ],
+    },
+    liveOrders: {
+      title: 'SAMPLE RECENT JOBS FROM THE CHANNEL',
+      subtitle: 'Dozens of fresh building requests published every single day',
+      liveBadge: 'Verified jobs',
+      viewInTelegram: 'Open in Telegram',
+      orders: [
+        {
+          title: 'Porcelain stoneware and tile installation in residential complex',
+          city: 'Prague 5 (Smíchov)',
+          category: 'Finishing / Tiling',
+          budget: 'from 750 Kč / m²',
+          date: 'Today, 10:15',
+        },
+        {
+          title: 'Formwork & concrete crew for underground parking garage',
+          city: 'Brno (Kuřim)',
+          category: 'Concrete / Formwork',
+          budget: 'negotiable estimate',
+          date: 'Today, 08:40',
+        },
+        {
+          title: 'Turnkey full renovation of a 3-room apartment',
+          city: 'Pilsen',
+          category: 'Turnkey renovation',
+          budget: '280,000 – 340,000 Kč',
+          date: 'Yesterday',
+        },
+        {
+          title: 'Facade thermal insulation and exterior plastering of private villa',
+          city: 'Prague-East (Říčany)',
+          category: 'Facade works',
+          budget: '190,000 Kč',
+          date: 'Yesterday',
+        },
+      ],
+    },
+    ctaBanner: {
+      motto1: 'BUILD.',
+      motto2: ' WORK.',
+      motto3: ' EARN.',
+      text: 'Subscribe to the channel and receive verified construction orders across the Czech Republic every single day.',
+      ctaButton: 'GO TO TELEGRAM',
+    },
+    footer: {
+      tagline: 'Construction orders across the Czech Republic',
+      description: 'Centralized hub for tradespeople, construction crews, independent masters, and general contractors in Czechia.',
+      contactsTitle: 'Contacts',
+      socialTitle: 'Social Networks',
+      telegramHighlight: 'Primary channel for daily orders',
+      telegramCta: 'Open Telegram Channel',
+      telegramHandle: '@buildplacecz',
+      email: 'info@buildplace.cz',
+      instagram: 'buildplacecz',
+      facebook: 'Buildplace.cz Facebook',
+      rights: '© 2026 BUILDPLACE.CZ. All rights reserved.',
+      czechMarketBadge: 'Czech Construction Market',
+    },
+  },
+};

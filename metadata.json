@@ -1,0 +1,6 @@
+{
+  "name": "Buildplace.cz - Stavební zakázky v Česku",
+  "description": "Платформа строительных заказов по всей Чехии. Актуальные заказы для бригад, мастеров и строительных компаний без посредников.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
