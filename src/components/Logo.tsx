@@ -48,25 +48,25 @@ export const Logo: React.FC<LogoProps> = ({
 }) => {
   // Dimensions calibrated for prominent visibility across mobile and desktop
   const emblemSizeClasses = {
-    sm: 'w-10 h-10 sm:w-12 sm:h-12',
-    md: 'w-13 h-13 sm:w-15 sm:h-15 lg:w-16 lg:h-16 xl:w-17 xl:h-17 2xl:w-19 2xl:h-19',
-    lg: 'w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24',
-    xl: 'w-20 h-20 sm:w-28 sm:h-28 lg:w-36 lg:h-36',
+    sm: 'w-8 h-8 sm:w-10 sm:h-10',
+    md: 'w-9 h-9 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-15 lg:h-15 xl:w-16 xl:h-16',
+    lg: 'w-14 h-14 sm:w-18 sm:h-18 lg:w-22 lg:h-22',
+    xl: 'w-18 h-18 sm:w-24 sm:h-24 lg:w-32 lg:h-32',
   };
 
   const titleSizes = {
-    sm: 'text-base sm:text-xl tracking-tight',
-    md: 'text-xl sm:text-2xl lg:text-[24px] xl:text-[26px] 2xl:text-[28px] tracking-tight',
-    lg: 'text-2xl sm:text-3xl lg:text-4xl tracking-tight',
-    xl: 'text-3xl sm:text-4xl lg:text-5xl tracking-tight',
+    sm: 'text-sm sm:text-base tracking-tight',
+    md: 'text-base sm:text-xl lg:text-[23px] xl:text-[25px] tracking-tight',
+    lg: 'text-xl sm:text-2xl lg:text-3xl tracking-tight',
+    xl: 'text-2xl sm:text-3xl lg:text-4xl tracking-tight',
   };
 
-  // Subtitle clearly readable, high-contrast and prominent
+  // Subtitle clearly readable, high-contrast; on small mobile screens hidden to prevent header overflow
   const subSizes = {
-    sm: 'text-[8px] sm:text-[9.5px] tracking-[0.12em]',
-    md: 'text-[9.5px] sm:text-[11px] lg:text-[11.5px] xl:text-[12px] 2xl:text-[12.5px] tracking-[0.14em] sm:tracking-[0.16em]',
-    lg: 'text-[11px] sm:text-[12px] lg:text-[13px] tracking-[0.16em]',
-    xl: 'text-[12px] sm:text-[14px] lg:text-[16px] tracking-[0.18em]',
+    sm: 'text-[7.5px] sm:text-[9px] tracking-[0.1em]',
+    md: 'hidden sm:block text-[9.5px] sm:text-[10.5px] lg:text-[11.5px] xl:text-[12px] tracking-[0.14em] sm:tracking-[0.16em]',
+    lg: 'text-[10px] sm:text-[11.5px] lg:text-[12.5px] tracking-[0.16em]',
+    xl: 'text-[11px] sm:text-[13px] lg:text-[15px] tracking-[0.18em]',
   };
 
   return (
